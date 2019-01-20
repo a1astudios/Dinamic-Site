@@ -1,2 +1,2 @@
-# dinamic
+# Dinamic
 Dinamic website
