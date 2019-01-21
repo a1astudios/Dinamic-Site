@@ -12,6 +12,9 @@ define('D_TEMPLATE', 'template');
 include('data.php');
 include('template.php');
 
+# Site Setup
+$debug = data_settings_value($dbc, 'debug-status');
+
 $site_title = 'Dinamic Website';
 
 if(isset($_GET['page'])) {
@@ -24,7 +27,14 @@ if(isset($_GET['page'])) {
 	
 #page setup
 $page = data_page($dbc, $pageid);
+
+
+
 	
-	
+
+
+
+
+
 
 ?>

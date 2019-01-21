@@ -14,3 +14,19 @@
 <!-- Latest compiled and minified Javascript -->	
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/bootstrap.min.js"></script>
 
+<script>
+	
+	$(document).ready(function() {
+					  
+		$("#console-debug").hide();
+		
+		$("#btn-debug").click(function(){
+			
+			$("#console-debug").toggle();
+		});
+		
+					  
+	});				  
+	
+	
+</script>

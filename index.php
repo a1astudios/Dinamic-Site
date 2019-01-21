@@ -23,18 +23,31 @@
     <?php include('navigation.php'); // main navigation ?>
 	
 		
-    <div class="container">
+    	<div class="container">
 
-		 <h1><?php echo $page['header']; ?></h1>
+	    	<h1><?php echo $page['header']; ?></h1>
 		
 
-		 <?php echo $page['body_formatted']; ?>
-
-	</div>
+	    	<?php echo $page['body_formatted']; ?>
+		
+	   	
+		</div>
 								
-	</div>
+	</div><!-- end wrap -->
 	
 	<?php include('footer.php'); ?>
+	
+	
+	<?php if($debug == 1) { ?>
+	<div id="console-debug">
+		
+		<pre>
+		    <?php print_r($page); ?>
+		</pre>
+		
+	</div>
+	<?php } ?>
+	
 	
 		
 </body>

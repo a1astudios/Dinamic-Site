@@ -52,6 +52,25 @@
         }
       }
 
+	#btn-debug {
+		position: absolute;
+	}
+	
+	#console-debug {
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		width: 30%;
+		height: 700px;
+	}
+	#console-debug pre{
+		height: 700px;
+		overflow-y: scroll;
+	}
+	
+	
+	
+	
 	
 	
 	</style>
