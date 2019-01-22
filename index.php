@@ -38,15 +38,10 @@
 	<?php include('footer.php'); ?>
 	
 	
-	<?php if($debug == 1) { ?>
-	<div id="console-debug">
-		
-		<pre>
-		    <?php print_r($page); ?>
-		</pre>
-		
-	</div>
-	<?php } ?>
+	<?php if($debug == 1) { include('debug.php'); } ?>
+	
+	
+	
 	
 	
 		
