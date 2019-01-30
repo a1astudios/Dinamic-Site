@@ -54,6 +54,7 @@
 
 	#btn-debug {
 		position: absolute;
+		
 	}
 	
 	#console-debug {

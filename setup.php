@@ -1,16 +1,17 @@
 <?php
 // Setup File:
 
-# Database Connection Here...
-$dbc = mysqli_connect('localhost', 'dev', 'password1', 'DinamicSite') or die('Could not connect because: '.mysqli_connect_error());
+
+# Database Connection:
+include('config/connection.php');
 
 # Constants:
 define('D_TEMPLATE', 'template');
 
 
 # functions:
-include('data.php');
-include('template.php');
+include('functions/data.php');
+include('functions/template.php');
 
 # Site Setup
 $debug = data_settings_value($dbc, 'debug-status');
