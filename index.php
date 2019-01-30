@@ -1,4 +1,4 @@
-<?php 	include('setup.php');?>
+<?php 	include('config/setup.php');?>
 
 
 <!doctype html>
@@ -10,9 +10,9 @@
 	
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<?php include('css.php'); ?>
+	<?php include('config/css.php'); ?>
 	
-  	<?php include('js.php'); ?>
+  	<?php include('config/js.php'); ?>
 	
 </head>
 	
@@ -20,7 +20,7 @@
 	
 	<div id="wrap">
 		
-    <?php include('navigation.php'); // main navigation ?>
+      <?php include('template/navigation.php'); // main navigation ?>
 	
 		
     	<div class="container">
@@ -35,15 +35,14 @@
 								
 	</div><!-- end wrap -->
 	
-	<?php include('footer.php'); ?>
+	<?php include('template/footer.php'); ?>
 	
 	
-	<?php if($debug == 1) { include('debug.php'); } ?>
+	<?php if($debug == 1) { include('widgets/debug.php'); } ?>
 	
 	
 	
 	
 	
-		
 </body>
 </html>
