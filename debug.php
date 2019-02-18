@@ -7,6 +7,13 @@
 	?>
 	<?php //print_r($all_vars); ?>
 	
+	
+<h1>Path Array</h1>
+		
+	<pre>
+<?php print_r($path); ?>
+	</pre>	
+	
 <h1>GET</h1>
 		
 	<pre>

@@ -14,7 +14,15 @@ function data_settings_value($dbc, $id){
 function data_page($dbc, $id) {
 	
 	# Page Setup
-	$q = "SElECT * FROM pages WHERE id = $id";
+	
+	if(is_numeric($id)) {
+		$cond = "WHERE id = $id";
+    } else {
+		$cond = "WHERE slug = '$id'";
+	}
+	
+	
+	$q = "SElECT * FROM pages $cond";
  	$r = mysqli_query($dbc, $q);
 	
 	$data = mysqli_fetch_assoc($r);
